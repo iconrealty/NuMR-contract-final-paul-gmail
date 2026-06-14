@@ -118,8 +118,8 @@ const rpaRows = [
     title: 'Items Included & Excluded', 
     content: 'Explicit list of personal items transferring with the property.',
     subRows: [
-      { id: '1', title: 'Household Appliances', description: 'Checks for stove, refrigerator, washer, dryer, and video doorbells.' },
-      { id: '2', title: 'Bathroom Mirrors', description: 'Stated to be included unless explicitly excluded in the agreement.' }
+      { id: '1', title: 'Personal property included', description: 'Checks for stove, refrigerator, washer, dryer, and video doorbells.' },
+      { id: '2', title: 'Personal property Excluded', description: 'Stated to be included unless explicitly excluded in the agreement.' }
     ]
   },
   { 
