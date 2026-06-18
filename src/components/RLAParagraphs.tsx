@@ -197,10 +197,10 @@ export default function RLAParagraphs({ onBack, isEmbedded = false }: RLAParagra
         )}
 
         {/* Minimal Header */}
-        <div className="mb-12 relative flex flex-col items-start pt-4">
+        <div className="mb-12 relative flex flex-col items-start pt-4 font-sans">
           <h1 className="text-4xl md:text-5xl font-semibold text-black tracking-tight leading-[1.1] font-display flex items-baseline gap-3 flex-wrap">
             RLA Paragraphs
-            <span className="text-2xl md:text-3xl font-bold text-zinc-400 font-sans leading-none">(1-22)</span>
+            <span className="text-sm md:text-lg font-normal text-zinc-400 font-sans leading-none">(1-22)</span>
           </h1>
         </div>
 

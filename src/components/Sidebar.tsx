@@ -43,8 +43,9 @@ export default function Sidebar({ forms, selectedFormId, onSelect, activePackage
           }`}
         >
           <div className="flex-1 min-w-0">
-            <div className={`font-semibold text-sm tracking-tight font-sans ${selectedFormId === 'overview' ? 'text-white' : 'text-black'}`}>
-              {activePackage === 'listing' ? 'Listing Package Overview' : 'Offer Package Overview'}
+            <div className={`font-semibold text-sm tracking-tight font-sans flex flex-wrap items-baseline gap-x-1 ${selectedFormId === 'overview' ? 'text-white' : 'text-black'}`}>
+              <span>{activePackage === 'listing' ? 'Listing Package Overview' : 'Offer Package Overview'}</span>
+              <span className={`text-[10px] font-normal ${selectedFormId === 'overview' ? 'text-zinc-400' : 'text-zinc-500'}`}>(Ver. 6/26)</span>
             </div>
           </div>
         </button>

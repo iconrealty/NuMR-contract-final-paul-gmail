@@ -53,7 +53,7 @@ export const formsData: FormDocument[] = [
   },
   {
     id: 'mlsa',
-    acronym: 'MLSA',
+    acronym: 'MLS-A',
     title: 'Multiple Listing Service Addendum',
     summary: 'Explains the benefits of using the Multiple Listing Service (MLS) and outlines rules regarding "Clear Cooperation" and internet marketing choices.',
     importance: 'Informs the seller how their property will be marketed and syndicated online, and ensures compliance with mandatory MLS submission rules set by NAR.',
@@ -72,7 +72,45 @@ export const formsData: FormDocument[] = [
       }
     ],
     proTip: 'Use this form to explain why maximum exposure via the MLS is usually their best tool for achieving the highest possible sale price.',
-    stats: { pages: 3, startPage: 10, endPage: 12, signatures: 1, initials: 3, agentSignatures: 1 }
+    stats: { pages: 3, startPage: 10, endPage: 12, signatures: 1, initials: 2, agentSignatures: 1 }
+  },
+  {
+    id: 'prbs',
+    acronym: 'PRBS-S',
+    title: 'Possible Representation of More Than One Buyer or Seller',
+    summary: 'Discloses that the brokerage may represent multiple clients who could be competing for the same property or selling similar properties.',
+    importance: 'Protects the brokerage by acknowledging that they might represent a buyer interested in the seller\'s property, or other sellers with competing listings in the neighborhood.',
+    keySections: [
+      {
+        title: 'Multiple Sellers & Buyers',
+        description: 'Brokerage may have listings on multiple similar properties and may work with various buyers looking at the same homes.'
+      },
+      {
+        title: 'Consent to Dual Agency',
+        description: 'The parties consent to the Brokerage acting as a dual agent if a situation arises where the Brokerage represents both the buyer and the seller in the same transaction.'
+      }
+    ],
+    proTip: 'Frame this positively to sellers. "We have a large database of active buyers looking for homes like yours, which is a massive advantage for you!"',
+    stats: { pages: 1, startPage: 13, endPage: 13, signatures: 1, initials: 0, agentSignatures: 1 }
+  },
+  {
+    id: 'dia',
+    acronym: 'DIA',
+    title: 'Disclosure Information Advisory',
+    summary: 'Advises the seller regarding various physical disclosure obligations, transfer disclosures, lead paint advisories, and statutory natural hazard reports.',
+    importance: 'This document explains the seller\'s critical and active responsibility to disclose all known material facts regarding the physical condition, additions, and history of the property.',
+    keySections: [
+      {
+        title: 'General Disclosure Guidelines',
+        description: 'Requires full written transfer disclosure statement (TDS) describing structural status, appliances, environmental hazards, and zoning.'
+      },
+      {
+        title: 'Natural Hazard & Lead Paint Reports',
+        description: 'Mandates provision of earthquake guidebooks and natural hazard disclosures (NHD) and outlines lead paint safety requirements.'
+      }
+    ],
+    proTip: 'Explain to the seller: "In California, real estate sales operate on active, full disclosure. If there is ever any second thought or query, always write it down in the disclosure paperwork."',
+    stats: { pages: 3, startPage: 14, endPage: 16, signatures: 1, initials: 0, agentSignatures: 0 }
   },
   {
     id: 'bca',
@@ -91,26 +129,7 @@ export const formsData: FormDocument[] = [
       }
     ],
     proTip: 'Address recent changes in industry practices confidently here. Explain that buyers are responsible for their agent\'s fees, but sellers may still receive offers asking for concessions to cover those costs.',
-    stats: { pages: 2, startPage: 13, endPage: 14, signatures: 1, initials: 0, agentSignatures: 0 }
-  },
-  {
-    id: 'prbs',
-    acronym: 'PRBS',
-    title: 'Possible Representation of More Than One Buyer or Seller',
-    summary: 'Discloses that the brokerage may represent multiple clients who could be competing for the same property or selling similar properties.',
-    importance: 'Protects the brokerage by acknowledging that they might represent a buyer interested in the seller\'s property, or other sellers with competing listings in the neighborhood.',
-    keySections: [
-      {
-        title: 'Multiple Sellers & Buyers',
-        description: 'Brokerage may have listings on multiple similar properties and may work with various buyers looking at the same homes.'
-      },
-      {
-        title: 'Consent to Dual Agency',
-        description: 'The parties consent to the Brokerage acting as a dual agent if a situation arises where the Brokerage represents both the buyer and the seller in the same transaction.'
-      }
-    ],
-    proTip: 'Frame this positively to sellers. "We have a large database of active buyers looking for homes like yours, which is a massive advantage for you!"',
-    stats: { pages: 2, startPage: 15, endPage: 16, signatures: 1, initials: 0, agentSignatures: 1 }
+    stats: { pages: 2, startPage: 17, endPage: 18, signatures: 1, initials: 0, agentSignatures: 0 }
   },
   {
     id: 'fhda',
@@ -129,7 +148,7 @@ export const formsData: FormDocument[] = [
       }
     ],
     proTip: 'Strongly advise your sellers against accepting "Buyer Letters" to protect them from potential discrimination liabilities. Focus strictly on the price and terms of the objective offer.',
-    stats: { pages: 2, startPage: 17, endPage: 18, signatures: 1, initials: 0, agentSignatures: 0 }
+    stats: { pages: 2, startPage: 19, endPage: 20, signatures: 1, initials: 0, agentSignatures: 0 }
   },
   {
     id: 'sa',
@@ -148,7 +167,7 @@ export const formsData: FormDocument[] = [
       }
     ],
     proTip: '"When in doubt, disclose." Over-disclosing protects the seller from stressful post-close lawsuits.',
-    stats: { pages: 2, startPage: 19, endPage: 20, signatures: 1, initials: 0, agentSignatures: 0 }
+    stats: { pages: 2, startPage: 21, endPage: 22, signatures: 1, initials: 0, agentSignatures: 0 }
   },
   {
     id: 'ccpa',
@@ -167,7 +186,7 @@ export const formsData: FormDocument[] = [
       }
     ],
     proTip: 'Keep it brief and reassuring. "This form lets you know we will be sharing your info with escrow and title to get your home sold, and that your data rights are protected by California law."',
-    stats: { pages: 1, startPage: 21, endPage: 21, signatures: 1, initials: 0, agentSignatures: 0 }
+    stats: { pages: 1, startPage: 23, endPage: 23, signatures: 1, initials: 0, agentSignatures: 0 }
   }
 ];
 
@@ -223,63 +242,6 @@ export const offerFormsData: FormDocument[] = [
     stats: { pages: 17, startPage: 3, endPage: 19, signatures: 1, initials: 18, agentSignatures: 1 }
   },
   {
-    id: 'frr-pa',
-    acronym: 'FRR-PA',
-    title: 'Federal Reporting Requirement Purchase Addendum',
-    summary: 'Identifies reporting obligations and conditions under FinCEN for transactions (e.g., cash sales, entity/trust purchases) to prevent money laundering.',
-    importance: 'Ensures compliance with federal rules (FinCEN) that aim to eliminate anonymous illicit flows in cash-based real estate purchases.',
-    keySections: [
-      {
-        title: 'FinCEN Reporting Obligations',
-        description: 'Specifies when escrow/title companies must report buyer identities for cash, trust, or corporate-entity transactions.'
-      },
-      {
-        title: 'Verification of Identities',
-        description: 'Requires buyers to provide valid corporate documentation and taxpayer identification numbers (TIN) upon request.'
-      }
-    ],
-    proTip: 'Remind buyers purchasing under an LLC or trust that FinCEN compliance is standard legal practice and does not threaten their transactional privacy if legitimate.',
-    stats: { pages: 1, startPage: 20, endPage: 20, signatures: 1, initials: 0, agentSignatures: 0 }
-  },
-  {
-    id: 'bia',
-    acronym: 'BIA',
-    title: 'Buyer\'s Investigation Advisory',
-    summary: 'Formally advises the buyer of their absolute responsibility to inspect and investigate the property\'s physical condition, zoning, and safety before closing.',
-    importance: 'Protects all parties by advising the buyer to perform due diligence. It explicitly details elements to double-check, emphasizing that visual inspection is not enough.',
-    keySections: [
-      {
-        title: 'Duty of Inspection',
-        description: 'Property condition is not guaranteed. Buyer has an active, affirmative duty to exercise reasonable care to discover facts.'
-      },
-      {
-        title: 'Comprehensive Review list',
-        description: 'Instructs the buyer to hire qualified specialists (structural, environmental, pests, soil stability, geologic) to verify safety.'
-      }
-    ],
-    proTip: 'Always advise the buyer to hire a professional home inspection company.',
-    stats: { pages: 2, startPage: 21, endPage: 22, signatures: 1, initials: 0, agentSignatures: 0 }
-  },
-  {
-    id: 'prbs',
-    acronym: 'PRBS',
-    title: 'Possible Representation of More Than One Buyer or Seller',
-    summary: 'Discloses that the brokerage may represent multiple clients who could be competing for the same property or selling similar properties.',
-    importance: 'Protects the brokerage by acknowledging that they might represent a buyer interested in the seller\'s property, or other sellers with competing listings in the neighborhood.',
-    keySections: [
-      {
-        title: 'Multiple Sellers & Buyers',
-        description: 'Brokerage may have listings on multiple similar properties and may work with various buyers looking at the same homes.'
-      },
-      {
-        title: 'Consent to Dual Agency',
-        description: 'The parties consent to the Brokerage acting as a dual agent if a situation arises where the Brokerage represents both the buyer and the seller in the same transaction.'
-      }
-    ],
-    proTip: 'For buyers, frame this as an indexing advantage: "We work with many sellers in this neighborhood, giving us early, inside access to potential listings!"',
-    stats: { pages: 2, startPage: 23, endPage: 24, signatures: 1, initials: 0, agentSignatures: 1 }
-  },
-  {
     id: 'fhda',
     acronym: 'FHDA',
     title: 'Fair Housing and Discrimination Advisory',
@@ -296,7 +258,7 @@ export const offerFormsData: FormDocument[] = [
       }
     ],
     proTip: 'Inform buyers: "We want our purchase package to be assessed strictly on its superior financial terms and secure financing, keeping us entirely safe from discrimination issues."',
-    stats: { pages: 2, startPage: 25, endPage: 26, signatures: 1, initials: 0, agentSignatures: 0 }
+    stats: { pages: 2, startPage: 20, endPage: 21, signatures: 1, initials: 0, agentSignatures: 0 }
   },
   {
     id: 'bhia',
@@ -315,7 +277,7 @@ export const offerFormsData: FormDocument[] = [
       }
     ],
     proTip: 'Have your buyer call their preferred insurance advisor on Day 1.',
-    stats: { pages: 1, startPage: 27, endPage: 27, signatures: 1, initials: 0, agentSignatures: 0 }
+    stats: { pages: 1, startPage: 22, endPage: 22, signatures: 1, initials: 0, agentSignatures: 0 }
   },
   {
     id: 'wfa',
@@ -334,26 +296,26 @@ export const offerFormsData: FormDocument[] = [
       }
     ],
     proTip: 'Establish a firm policy: "Never transfer any funds until you have called our escrow partner on the phone using a pre-established number to verify the wiring details, digit by digit."',
-    stats: { pages: 1, startPage: 28, endPage: 28, signatures: 1, initials: 0, agentSignatures: 0 }
+    stats: { pages: 2, startPage: 23, endPage: 24, signatures: 1, initials: 0, agentSignatures: 0 }
   },
   {
-    id: 'ccpa',
-    acronym: 'CCPA',
-    title: 'California Consumer Privacy Act Advisory, Disclosure and Notice',
-    summary: 'Advises California residents of their rights regarding the collection, sharing, and sale of their private personal information.',
-    importance: 'A legally required notice explaining that during a real estate transaction, personal information will be collected and shared with necessary third parties (lenders, title, escrow).',
+    id: 'bia',
+    acronym: 'BIA',
+    title: 'Buyer\'s Investigation Advisory',
+    summary: 'Formally advises the buyer of their absolute responsibility to inspect and investigate the property\'s physical condition, zoning, and safety before closing.',
+    importance: 'Protects all parties by advising the buyer to perform due diligence. It explicitly details elements to double-check, emphasizing that visual inspection is not enough.',
     keySections: [
       {
-        title: 'Data Collection & Sharing',
-        description: 'Explains that contact, address, and financial records must be shared with escrow, title agents, and banks to execute standard closings.'
+        title: 'Duty of Inspection',
+        description: 'Property condition is not guaranteed. Buyer has an active, affirmative duty to exercise reasonable care to discover facts.'
       },
       {
-        title: 'Consumer Rights',
-        description: 'Outlines standard privacy choices, access protocols, and data deletion rights established by California law.'
+        title: 'Comprehensive Review list',
+        description: 'Instructs the buyer to hire qualified specialists (structural, environmental, pests, soil stability, geologic) to verify safety.'
       }
     ],
-    proTip: 'Be reassuring: "This is a standard disclosure ensuring that as we share your transaction files with title and lenders, your identity and data privacy choices remain rigorously protected."',
-    stats: { pages: 1, startPage: 29, endPage: 29, signatures: 1, initials: 0, agentSignatures: 0 }
+    proTip: 'Always advise the buyer to hire a professional home inspection company.',
+    stats: { pages: 2, startPage: 25, endPage: 26, signatures: 1, initials: 0, agentSignatures: 0 }
   }
 ];
 

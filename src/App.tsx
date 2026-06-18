@@ -75,7 +75,11 @@ export default function App() {
                 }}
                 className="hover:text-black transition-colors font-semibold uppercase tracking-wide cursor-pointer text-xs"
               >
-                {activePackage === 'listing' ? 'Listing Package' : 'Offer Package'}
+                {activePackage === 'listing' ? (
+                  <>Listing Package <span className="text-[10px] font-normal lowercase text-zinc-400 ml-0.5">(ver. 6/26)</span></>
+                ) : (
+                  <>Offer Package <span className="text-[10px] font-normal lowercase text-zinc-400 ml-0.5">(ver. 6/26)</span></>
+                )}
               </button>
             )}
           </div>
@@ -100,11 +104,14 @@ export default function App() {
             >
               <div className="absolute right-0 top-0 w-32 h-32 bg-zinc-50 rounded-full blur-2xl pointer-events-none translate-x-8 -translate-y-8 group-hover:bg-zinc-100 transition-colors"></div>
               
-              <h2 className="text-2xl font-bold font-display text-black mb-3 z-10 flex items-center gap-2">
-                Listing Package
-                <span className="text-[10px] font-bold text-white font-sans bg-black px-2.5 py-0.5 rounded-full uppercase tracking-wider">
-                  Seller
+              <h2 className="text-2xl font-bold font-display text-black mb-3 z-10 flex items-baseline flex-wrap gap-x-2 gap-y-1">
+                <span className="flex items-center gap-2">
+                  Listing Package
+                  <span className="text-[10px] font-bold text-white font-sans bg-black px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+                    Seller
+                  </span>
                 </span>
+                <span className="text-sm font-normal text-zinc-400 font-sans">(Ver. 6/26)</span>
               </h2>
               
               <p className="text-zinc-500 text-sm font-medium leading-relaxed mb-6 flex-1 z-10">
@@ -114,11 +121,11 @@ export default function App() {
               <div className="border-t border-black/5 pt-5 mb-6 grid grid-cols-2 gap-4 z-10">
                 <div>
                   <span className="block text-[10px] uppercase tracking-wider text-zinc-400 font-bold">Core Forms</span>
-                  <span className="text-lg font-bold text-black">8 Forms</span>
+                  <span className="text-lg font-bold text-black">9 Forms</span>
                 </div>
                 <div>
                   <span className="block text-[10px] uppercase tracking-wider text-zinc-400 font-bold">Total Pages</span>
-                  <span className="text-lg font-bold text-black">21 Pages</span>
+                  <span className="text-lg font-bold text-black">23 Pages</span>
                 </div>
               </div>
 
@@ -136,11 +143,14 @@ export default function App() {
             >
               <div className="absolute right-0 top-0 w-32 h-32 bg-zinc-50 rounded-full blur-2xl pointer-events-none translate-x-8 -translate-y-8 group-hover:bg-zinc-100 transition-colors"></div>
 
-              <h2 className="text-2xl font-bold font-display text-black mb-3 z-10 flex items-center gap-2">
-                Offer Package
-                <span className="text-[10px] font-bold text-white font-sans bg-black px-2.5 py-0.5 rounded-full uppercase tracking-wider">
-                  Buyer
+              <h2 className="text-2xl font-bold font-display text-black mb-3 z-10 flex items-baseline flex-wrap gap-x-2 gap-y-1">
+                <span className="flex items-center gap-2">
+                  Offer Package
+                  <span className="text-[10px] font-bold text-white font-sans bg-black px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+                    Buyer
+                  </span>
                 </span>
+                <span className="text-sm font-normal text-zinc-400 font-sans">(Ver. 6/26)</span>
               </h2>
 
               <p className="text-zinc-500 text-sm font-medium leading-relaxed mb-6 flex-1 z-10">
@@ -150,11 +160,11 @@ export default function App() {
               <div className="border-t border-black/5 pt-5 mb-6 grid grid-cols-2 gap-4 z-10">
                 <div>
                   <span className="block text-[10px] uppercase tracking-wider text-zinc-400 font-bold">Core Forms</span>
-                  <span className="text-lg font-bold text-black">9 Forms</span>
+                  <span className="text-lg font-bold text-black">6 Forms</span>
                 </div>
                 <div>
                   <span className="block text-[10px] uppercase tracking-wider text-zinc-400 font-bold">Total Pages</span>
-                  <span className="text-lg font-bold text-black">29 Pages</span>
+                  <span className="text-lg font-bold text-black">26 Pages</span>
                 </div>
               </div>
 

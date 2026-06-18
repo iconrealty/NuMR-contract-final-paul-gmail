@@ -37,8 +37,8 @@ const paragraphs = [
   { id: 29, title: 'Liquidated Damages', description: 'Limits buyer default liability to standard good faith deposit ceilings up to 3% when signed by both parties.', formPage: '15', pkgPage: '17' },
   { id: 30, title: 'Mediation', description: 'Mandates active mediation participation before using binding arbitration or standard local court proceedings.', formPage: '15', pkgPage: '17' },
   { id: 31, title: 'Arbitration of Disputes', description: 'Neutral binding arbitration for claims and transaction conflicts that failed resolution in mediation.', formPage: '15', pkgPage: '17' },
-  { id: 32, title: 'Offer Block', description: 'Contains offer expiration parameters, representative spaces, and buyer formal sign indicators.', formPage: '16-17', pkgPage: '18' },
-  { id: 33, title: 'Acceptance Block', description: 'Details seller counters, brokerage representation, and holds seller\'s final binding execution signature.', formPage: '16-17', pkgPage: '18' }
+  { id: 32, title: 'Offer Block', description: 'Contains offer expiration parameters, representative spaces, and buyer formal sign indicators.', formPage: '16', pkgPage: '18' },
+  { id: 33, title: 'Acceptance Block', description: 'Details seller counters, brokerage representation, and holds seller\'s final binding execution signature.', formPage: '17', pkgPage: '19' }
 ];
 
 const importantParagraphs = [1, 2, 3, 8, 11, 14, 29, 31, 33];
@@ -55,7 +55,8 @@ const pageGroups = [
   { pageNum: '12', name: 'Page 12', packageText: 'Package Page 14', colorKey: '3', paras: 'Paras 18-19' },
   { pageNum: '13-14', name: 'Pages 13-14', packageText: 'Package Pages 15-16', colorKey: '4', paras: 'Paras 20-28' },
   { pageNum: '15', name: 'Page 15', packageText: 'Package Page 17', colorKey: '5', paras: 'Paras 29-31' },
-  { pageNum: '16-17', name: 'Pages 16-17', packageText: 'Package Pages 18-19', colorKey: '6', paras: 'Paras 32-33' }
+  { pageNum: '16', name: 'Page 16', packageText: 'Package Page 18', colorKey: '6', paras: 'Para 32' },
+  { pageNum: '17', name: 'Page 17', packageText: 'Package Page 19', colorKey: '1', paras: 'Para 33' }
 ];
 
 const pageStyles: Record<string, {
@@ -221,7 +222,7 @@ export default function RPAParagraphs({ onBack, isEmbedded = false }: RPAParagra
         <div className="mb-12 relative flex flex-col items-start pt-4 font-sans">
           <h1 className="text-4xl md:text-5xl font-semibold text-black tracking-tight leading-[1.1] font-display flex items-baseline gap-3 flex-wrap">
             RPA Paragraphs
-            <span className="text-2xl md:text-3xl font-bold text-zinc-400 font-sans leading-none">(1-33)</span>
+            <span className="text-sm md:text-lg font-normal text-zinc-400 font-sans leading-none">(1-33)</span>
           </h1>
         </div>
 

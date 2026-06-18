@@ -51,7 +51,7 @@ const rpaRows = [
     content: 'Details any front-end credits back to the buyer to help cover transaction fees.',
     subRows: [
       { id: '1', title: 'Seller Credit to Buyer', description: 'Specific maximum dollar credit agreed upon to cover buyer\'s closing costs.' },
-      { id: '2', title: 'Additional Seller Credits', description: 'Note that this credit is in addition to G.1.' },
+      { id: '2', title: 'Seller Credits', description: 'Seller credits other than closing cost or buyer broker compensation.' },
       { id: '3', title: 'Seller Payment to Pay Buyer\'s Broker', description: 'This is the section where we ask the seller to pay for our broker compensation. Note that a BRBC is Required and MUST be signed by the buyer before presenting the offer.' }
     ]
   },
@@ -142,7 +142,8 @@ const rpaRows = [
       { id: '13', title: 'HOA Certification Fee (Buyer)', description: 'Allocates who pays for the standard homeowner association certification documents.' },
       { id: '14', title: 'HOA Transfer Fee (Seller)', description: 'Delineates which party pays the association\'s ownership transfer administration fee.' },
       { id: '15', title: 'Private Transfer Fee', description: 'Allocation of any private or developer-specific transfer fees associated with the transaction.' },
-      { id: '16 & 17', title: 'Other Fees', description: 'Custom slots to allocate other transaction fees like property management or document prep.' },
+      { id: '16', title: 'Septic, well, propane tank and property boundaries', description: 'Allocation of costs for inspections, reports, or governmental requirements related to septic systems, private wells, propane tanks, and physical boundaries.' },
+      { id: '17', title: 'Other Fees', description: 'Custom slot to allocate any other transaction fees like property management or document prep.' },
       { id: '18', title: 'Home Warranty (Seller)', description: 'Identifies who pays for the home warranty coverage, specifying the provider and the cap on the seller\'s contribution.' }
     ]
   },

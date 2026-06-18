@@ -30,8 +30,9 @@ export default function Dashboard({ onBack, onSelectForm, activePackage, onSwitc
 
         {/* Header */}
         <div className="mb-8 relative flex flex-col items-start pt-4 font-sans">
-          <h1 className="text-4xl md:text-5xl font-semibold text-black tracking-tight leading-[1.1] font-display mb-4">
-            {activePackage === 'listing' ? 'Listing Package Overview' : 'Offer Package Overview'}
+          <h1 className="text-4xl md:text-5xl font-semibold text-black tracking-tight leading-[1.1] font-display mb-4 flex flex-wrap items-baseline gap-x-2">
+            <span>{activePackage === 'listing' ? 'Listing Package Overview' : 'Offer Package Overview'}</span>
+            <span className="text-xs sm:text-sm font-normal text-zinc-400 font-sans">(Ver. 6/26)</span>
           </h1>
         </div>
 
@@ -47,7 +48,7 @@ export default function Dashboard({ onBack, onSelectForm, activePackage, onSwitc
               Full Package Access
             </div>
             <h2 className="text-2xl font-bold tracking-tight font-display text-white mt-1.5">
-              {activePackage === 'listing' ? 'Full 21-Page Package' : 'Full 29-Page Package'}
+              {activePackage === 'listing' ? 'Full 23-Page Package' : 'Full 26-Page Package'}
             </h2>
           </div>
           

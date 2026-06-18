@@ -30,7 +30,7 @@ const rlaRows = [
     content: 'Outlines the total compensation structure for the listing broker.',
     subRows: [
       { id: '1', title: 'Compensation to Seller\'s Broker', description: 'The total percentage or flat fee paid by the seller to the listing broker.' },
-      { id: '2', title: 'Additional Compensation if Unrepresented Buyer', description: 'Agreed upon adjustments if the buyer is unrepresented.' },
+      { id: '2', title: 'Additional Compensation if Unrepresented Buyer', description: 'If broker represents both sides, Broker must obtain a separate BRBC for the buyers side' },
       { id: '3', title: 'Continuation of Right to Compensation', description: 'Protects the broker\'s commission for a certain period after the agreement ends for buyers introduced during the listing.' },
       { id: '4', title: 'Seller Obligation to Previous Brokers', description: 'Identifies if the seller still owes compensation obligations to a previous listing broker.' },
       { id: '5', title: 'Broker is Paying a Referral Fee', description: 'Discloses if the broker will be paying a referral fee out of their own compensation.' }
